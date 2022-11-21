@@ -1,0 +1,23 @@
+.slick {
+}
+
+.slick__list {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.slick__item {
+  padding: 0 20px;
+}
+
+.slick__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+
+  height: 300px;
+  margin: 0 auto;
+  background-color: green;
+  font-size: 58px;
+}

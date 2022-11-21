@@ -1,0 +1,83 @@
+.slider__container.two_245 {
+  position: relative;
+  width: 510px; // for image 245px
+  width: 570px; // for image 275px
+  width: 405px; // for image 195px
+  // width: 330px; // for image 245px shift right
+  //width: 375px; // for image 275px shift right
+  //width: 285px;// for image 195px shift right
+  left: -180px; // for image shift 245px left
+  left: -195px; //for image shift 275px left
+  left: -120px; //for image shift 195px left
+  border: 1px solid black;
+  overflow: hidden;
+  * img {
+    display: block;
+  }
+}
+
+.slider__list.two_245 {
+  position: relative;
+  padding: 0 0 70px;
+  width: 530px; //for image 245px
+  width: 590px; // for image 275px
+  width: 420px; // for image 195px
+}
+
+.slider__item.two_245 {
+  margin-right: 20px; //for image 245px, 275px margin 20px
+  margin-right: 15px; //for image 195px margin 15px
+  outline: 1px solid red;
+}
+
+.slider__image.two_245 {
+  width: 245px; // for image 245px
+  height: 245px; // for image 245px
+  width: 275px; // for image 275px
+  height: 275px; // for image 275px
+  width: 195px; // for image 195px
+  height: 195px; // for image 195px
+  object-fit: cover;
+  object-position: center;
+  outline: 1px solid blue;
+}
+
+.two_245 .slick-prev.slick-arrow::before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+  background-image: url('../images/vectorL.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.two_245 .slick-prev.slick-arrow {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 90%;
+  left: 40%;
+  z-index: 5;
+}
+
+.two_245 .slick-next.slick-arrow::before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+  background-image: url('../images/vectorR.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.two_245 .slick-next.slick-arrow {
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  top: 90%;
+  left: 50%;
+  z-index: 5;
+}

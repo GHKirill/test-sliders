@@ -1,0 +1,194 @@
+@mixin slider-arrows() {
+  & .slick-prev.slick-arrow::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+    background-image: url('../images/vectorL.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  & .slick-prev.slick-arrow {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: 90%;
+    left: 40%;
+    z-index: 5;
+  }
+
+  & .slick-next.slick-arrow::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+    background-image: url('../images/vectorR.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+  & .slick-next.slick-arrow {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    top: 90%;
+    left: 50%;
+    z-index: 5;
+  }
+}
+
+@mixin two-cards-slider($card-width, $margin, $left: 0px, $right: 0px) {
+  position: relative;
+  width: calc($card-width * 2 + $margin - $right);
+  left: -$left;
+  border: 1px solid black;
+  overflow: hidden;
+  & img {
+    display: block;
+    width: $card-width;
+    object-fit: cover;
+    object-position: center;
+    outline: 1px solid blue;
+  }
+  & ul {
+    position: relative;
+    padding: 0 0 70px;
+    width: calc($card-width * 2 + $margin * 2);
+  }
+  & li {
+    margin-right: $margin;
+    outline: 1px solid red;
+  }
+  & .slick-prev.slick-arrow::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+    background-image: url('../images/vectorL.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  & .slick-prev.slick-arrow {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: 90%;
+    left: 40%;
+    z-index: 5;
+  }
+
+  & .slick-next.slick-arrow::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+    background-image: url('../images/vectorR.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+  & .slick-next.slick-arrow {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    top: 90%;
+    left: 50%;
+    z-index: 5;
+  }
+  // @include slider-arrows() {
+  // }
+}
+
+@mixin three-cards-slider($width-max, $width-min, $margin, $place-of-big) {
+  position: relative;
+  width: calc($width-max + ($width-min + $margin) * 2 - 0px);
+  padding: 0;
+  margin: 0;
+  outline: 1px solid black;
+  overflow: hidden;
+  * > img {
+    display: block;
+  }
+  & .wrapper {
+    border: 1px dotted green;
+    position: relative;
+    width: calc($width-max + ($width-min + $margin) * 4 - 0px);
+    left: calc(($width-min + $margin) * (-2) - 0px);
+    overflow: hidden;
+  }
+  & ul {
+    padding: 0 0 70px;
+    @if $place-of-big == 'right' {
+      width: calc($width-max + ($width-min + $margin) * 8);
+    }
+    @if $place-of-big == 'center' {
+      width: calc($width-max + ($width-min + $margin) * 6);
+    }
+    @if $place-of-big == 'left' {
+      width: calc($width-max + ($width-min + $margin) * 4);
+    }
+  }
+  & li {
+    margin-right: $margin;
+    display: inline;
+  }
+  & image {
+    width: $width-min;
+    height: $width-max;
+    object-fit: cover;
+    object-position: center;
+    outline: 1px solid blue;
+  }
+  & li.slick-active > img {
+    outline: 1px solid red;
+    width: $width-max;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  & .slick-prev.slick-arrow::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+    background-image: url('../images/vectorL.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  & .slick-prev.slick-arrow {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: 90%;
+    left: 45%;
+    z-index: 5;
+  }
+
+  & .slick-next.slick-arrow::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+    background-image: url('../images/vectorR.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+  & .slick-next.slick-arrow {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    top: 90%;
+    left: 55%;
+    z-index: 5;
+  }
+}

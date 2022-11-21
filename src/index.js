@@ -1,0 +1,10 @@
+import './js/slick_slider';
+import './js/anchor-scroll';
+import './js/simplelightbox';
+import './js/test_slider';
+import './js/lazy_slider';
+import './js/test_slider_3';
+import './js/slider_variable_width';
+import './js/slider_responsive';
+import './js/slider_autoplay';
+import './js/header_scroll';

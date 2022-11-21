@@ -1,0 +1,58 @@
+/* We provide */
+
+.prov__box {
+    display: flex;
+  }
+  
+  .prov__descr {
+    padding-top: 84px;
+    padding-bottom: 84px;
+    padding-left: 30px;
+    padding-right: 44px;
+    background-color: rgba(40, 167, 69, 1);
+    color: #ffffff;
+  }
+  
+  .prov__sub-title {
+    margin-bottom: 5px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.647;
+  }
+  
+  .prov__title {
+    margin-top: 0px;
+    margin-bottom: 26px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1.263;
+  }
+  
+  .prov__text {
+    margin-top: 0px;
+    margin-bottom: 17px;
+  
+    width: 606px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.564;
+    color: #ffffff;
+  }
+  
+  .prov__button {
+    display: block;
+    width: 167px;
+    height: 50px;
+    border: 1px solid #fff;
+    margin-top: 0px;
+    border-radius: 5px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.564;
+    background-color: #28a745;
+    color: #ffffff;
+  }
